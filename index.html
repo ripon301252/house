@@ -48,10 +48,10 @@
 </head>
 <body class="font-manrope">
         <!-- navbar section -->
-        <nav  class=" flex items-center justify-between px-24 py-6">
+        <nav  class=" flex items-center justify-between lg:px-24 py-6 sm:px-14">
          
            <button class="flex items-center">
-            <ion-icon name="arrow-forward-sharp" class="-rotate-45 bg-button p-1 rounded-full mr-1"></ion-icon> <span class="text-xl font-extrabold">Rinterio</span>
+            <ion-icon name="arrow-forward-sharp" class="-rotate-45 bg-button p-1 rounded-full mr-1 sm:text-2xl"></ion-icon> <span class="lg:text-xl sm:text-3xl font-extrabold ">Rinterio</span>
            </button>
           
           <div class="ml-32">
@@ -80,9 +80,9 @@
               <ion-icon name="arrow-forward-circle" class="text-4xl -rotate-45"></ion-icon>
             </button>
 
-            <div class="flex items-center lg:hidden">
+            <div class="flex items-center lg:hidden sm:pr-5">
               <span>
-                <ion-icon name="menu-sharp" class=" bg-cart-search p-3 rounded-full cursor-pointer"></ion-icon>
+                <ion-icon name="menu-sharp" class=" bg-cart-search p-3 rounded-full cursor-pointer sm:text-2xl "></ion-icon>
               </span>
             </div>
           
@@ -99,15 +99,16 @@
 
 <!-- about us section-->
  <section class="about bg-background px-20 py-6 pb-16 rounded-lg mt-10">
-  <div class="mb-2">
+  <div class="mb-2 sm:hidden lg:inline">
     <img class="ml-10" src="assets/Vector.png" alt="">
   </div>
-  <div class="flex justify-between px-24">
+  <div class="flex justify-between sm:flex-col lg:flex-row md:flex-row px-24">
     <div>
-      <button class="btn rounded-full bg-about hover:bg-about px-5"><ion-icon name="arrow-forward-outline"></ion-icon>About Us</button>
-      <h1 class="text-4xl font-extrabold my-6">We design thoughtful,<br> liveable spaces</h1>
-      <p class="text-gray-500">The barn house captivates with its blend of rustic charm and <br>modern sophistication, featuring weathered wood, sleek metal accents.</p>
-
+      <div class="sm:text-center lg:text-left">
+        <button class="btn rounded-full bg-about hover:bg-about px-5"><ion-icon name="arrow-forward-outline"></ion-icon>About Us</button>
+        <h1 class="text-4xl font-extrabold my-6">We design thoughtful,<br> liveable spaces</h1>
+        <p class="text-gray-500">The barn house captivates with its blend of rustic charm and <br>modern sophistication, featuring weathered wood, sleek metal accents.</p>
+      </div>
       <div class="flex bg-about p-6 rounded-2xl mt-6">
         <div class="mr-6">
           <img class="w-36" src="assets/commercial.png" alt="">
@@ -128,8 +129,8 @@
         </div>
       </div>
     </div>
-    <div class="ml-8">
-      <img class="w-[840px] h-[575px]" src="assets/Rectangle.png" alt="">
+    <div class="lg:ml-8  sm:mt-5">
+      <img class="lg:w-[840px] lg:h-[561px] sm:w-[350px] sm:h-[230px] sm:" src="assets/Rectangle.png" alt="">
     </div>
   </div>
  </section>
@@ -142,7 +143,7 @@
     <p class="text-gray-500 mb-10">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
   </div>
 
-  <div class="flex justify-between gap-5">
+  <div class="flex  lg:flex-row flex-col justify-between gap-5">
     <div class="bg-card-1 p-6 rounded-xl">
       <img src="assets/concept.png" alt="">
       <h1 class="text-xl font-bold my-3">Concept</h1>
@@ -171,46 +172,46 @@
 
  <!-- Challenge part  -->
  <section class="challenge bg-background mt-20 py-8">
-  <div class="text-center">
+  <div class="lg:text-center sm:text-center">
     <button class="btn rounded-full bg-cart-search hover:bg-cart-search px-5 "><ion-icon name="arrow-forward-outline"></ion-icon>Explore our Latest works</button>
     <h1 class="text-4xl font-extrabold my-4">Our Latest Portfolio</h1>
     <p class="text-gray-500 mb-10">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
   </div>
 
-  <div class="flex justify-between px-24 ">
-    <div class="flex bg-about p-3 mr-5 rounded-2xl">
+  <div class="flex lg:flex-row flex-col justify-between px-24 ">
+    <div class="flex flex-col lg:flex-row bg-about p-1 lg:mr-5 rounded-2xl sm:mb-5">
       <div class="p-5">
         <img class="w-[450px]" src="assets/img1.png." alt="">
       </div>
-      <div class="p-5 pl-0">
+      <div class="p-5 pl-0 sm:ml-5">
         <h1 class="text-3xl font-extrabold">Commercial</h1>
         <p class="text-gray-500 my-3">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
         <p class="flex items-center text-xl cursor-pointer">View Details<ion-icon name="arrow-forward-sharp" class="-rotate-45 bg-button p-1 rounded-full ml-1"></ion-icon></p>
       </div>
     </div>
-      <div class="bg-about p-6 rounded-2xl">
-        <img class="w-[550px]" src="assets/img2.png" alt="">
+      <div class="bg-about p-6 rounded-2xl  mb-5">
+        <img class="lg:w-[550px] sm:w-[466px]" src="assets/img2.png" alt="">
       </div>
   </div>
 
   <!-- -------------------------------- -->
 
-  <div class="flex justify-between px-24 mt-5">
-    <div class="bg-about p-6 rounded-2xl mr-5">
-      <img class="w-[237px]" src="assets/img3.png" alt="">
+  <div class="flex flex-col lg:flex-row justify-between px-24 mt-1">
+    <div class="bg-about p-6 rounded-2xl lg:mr-5 mb-0 mt-5">
+      <img class="lg:w-[237px] sm:w-[466px]" src="assets/img3.png" alt="">
     </div>
-    <div class="flex bg-about p-3 mr-5 rounded-2xl">
+    <div class="flex flex-col lg:flex-row bg-about p-3 lg:mr-5 rounded-2xl sm:mt-5">
       <div class="p-5">
-        <img class="w-[260px]" src="assets/img4.png." alt="">
+        <img class="lg:w-[260px] sm:w-[450px]" src="assets/img4.png." alt="">
       </div>
-      <div class="p-5 pl-0">
+      <div class="p-5 pl-0 sm:ml-5">
         <h1 class="text-3xl font-extrabold">Commercial</h1>
         <p class="text-gray-500 my-3">The barn house captivates with its blend of rustic charm and modern .</p>
         <p class="flex items-center text-xl cursor-pointer">View Details<ion-icon name="arrow-forward-sharp" class="-rotate-45 bg-button p-1 rounded-full ml-1"></ion-icon></p>
       </div>
     </div>
-      <div class="bg-about p-6 rounded-2xl">
-        <img class="w-[237px]" src="assets/img5.png" alt="">
+      <div class="bg-about p-6  rounded-2xl sm:mt-5">
+        <img class="lg:w-[237px] sm:w-[466px]" src="assets/img5.png" alt="">
       </div>
   </div>
  </section>
@@ -225,18 +226,18 @@
     </div>
 
     <div>
-      <div class="flex justify-center items-center gap-3 ">
-          <input class="pl-6 py-4 pr-40 rounded-full" type="text" placeholder="First Name*">
-          <input class="pl-6 py-4 pr-40 rounded-full" type="text" placeholder="Last Name*">
+      <div class="flex justify-center items-center lg:flex-row sm:flex-col  gap-5 ">
+          <input class="pl-6 py-4 lg:pr-40 sm:pr-72 rounded-full" type="text" placeholder="First Name*">
+          <input class="pl-6 py-4 lg:pr-40 sm:pr-72 rounded-full" type="text" placeholder="Last Name*">
       </div>
-      <div class="flex justify-center items-center gap-3 mt-6">
-        <input class="pl-6 py-4 pr-40 rounded-full" type="text" placeholder="Phone Number*">
-        <input class="pl-6 py-4 pr-40 rounded-full" type="text" placeholder="Email Address*">
+      <div class="flex justify-center items-center lg:flex-row sm:flex-col gap-5 mt-5">
+        <input class="pl-6 py-4 lg:pr-40 sm:pr-72 rounded-full" type="text" placeholder="Phone Number*">
+        <input class="pl-6 py-4 lg:pr-40 sm:pr-72 rounded-full" type="text" placeholder="Email Address*">
       </div>
     </div>
 
-    <div class="flex justify-center items-center my-6">
-      <textarea class="pl-6 py-3 pr-[448px] rounded-2xl" name="" id="" cols="30" rows="10" placeholder="Write your message here"></textarea>
+    <div class="flex justify-center items-center  my-6">
+      <textarea class="pl-6 py-3 lg:pr-[448px] sm:pr-60 rounded-2xl sm:text-sm" name="" id="" cols="30" rows="10" placeholder="Write your message here"></textarea>
     </div>
     <div class="px-52">
       <a class="btn bg-button hover:bg-button px-6 rounded-full font-bold text-base mb-2 lg:flex lg:items-center">Send Mail<ion-icon name="arrow-forward-circle" class="text-4xl -rotate-45"></ion-icon></a>
